@@ -39,11 +39,21 @@ const button = cva(
   }
 );
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLAnchorElement>, VariantProps<typeof button> {
+interface BaseButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  intent?: 'primary' | 'secondary';
+  size?: 'sm' | 'lg';
   underline?: boolean;
-  href?: string;
   type?: 'button' | 'submit' | 'reset';
 }
+
+interface LinkButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  intent?: 'primary' | 'secondary';
+  size?: 'sm' | 'lg';
+  underline?: boolean;
+  href: string;
+}
+
+type ButtonProps = (BaseButtonProps & { href?: never }) | (LinkButtonProps & { type?: never });
 
 export const Button: React.FC<ButtonProps> = ({
   className,
@@ -51,7 +61,7 @@ export const Button: React.FC<ButtonProps> = ({
   size,
   underline,
   href,
-  type = 'button',
+  type = 'button', // Default value should be valid
   children,
   ...props
 }) => {
@@ -60,14 +70,14 @@ export const Button: React.FC<ButtonProps> = ({
   if (href) {
     return (
       <Link href={href} legacyBehavior>
-        <a className={buttonClass} {...props}>
+        <a className={buttonClass} {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}>
           {children}
         </a>
       </Link>
     );
   } else {
     return (
-      <button type={type} className={buttonClass} {...props}>
+      <button type={type as 'button' | 'submit' | 'reset'} className={buttonClass} {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}>
         {children}
       </button>
     );
