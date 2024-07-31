@@ -111,7 +111,6 @@ export default function Web() {
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-200">Message</label>
               <textarea
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm dark:bg-gray-800 dark:border-gray-700 dark:text-white p-3"
-                rows="4"
               ></textarea>
             </div>
             <Button type="submit" className="w-full">
