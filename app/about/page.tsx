@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { Button } from 'components/Button/Button';
 
 export const metadata: Metadata = {
   title: 'Next.js Enterprise Boilerplate',
@@ -27,17 +26,17 @@ export default function Web() {
                     <div className="flex items-center">
                         <img src="/assets/Logoblack.png" alt="Description" className="w-60 h-45" />
                     </div>
-                    <div className="flex space-x-4">
-                        <a href="/" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="/services" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                        <a href="/about" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="/contact" className="text-blue-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    <div className="flex space-x-0.5">
+                        <a href="/" className="text-gray-700 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="/services" className="text-gray-700 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="/about" className="text-gray-700 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/contact" className="text-blue-400 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                     </div>
                 </div>
                 </nav>
 
-      <main className="flex flex-grow flex-col justify-center items-center">
+      <main className="flex flex-grow flex-col justify-center items-center pt-40">
       <h2 className="mb-4 text-5xl font-extrabold leading-none tracking-tight dark:text-white text-center">
               About Us
             </h2>

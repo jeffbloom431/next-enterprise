@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { Button } from 'components/Button/Button';
 
 export const metadata: Metadata = {
   title: 'Next.js Enterprise Boilerplate',
@@ -22,21 +21,21 @@ export default function Web() {
   return (
     <>
 
-        <nav className="bg-white dark:bg-gray-900 fixed top-0 left-0 w-full z-50">
-        <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-                <img src="/assets/Logoblack.png" alt="Description" className="w-60 h-45" />
-            </div>
-            <div className="flex space-x-4">
-                <a href="/" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                <a href="/services" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                <a href="/about" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                <a href="/contact" className="text-blue-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-            </div>
-            </div>
-        </div>
-        </nav>
+      <nav className="bg-white dark:bg-gray-900 fixed top-0 left-0 w-full z-50">
+          <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between h-16">
+              <div className="flex items-center">
+                  <img src="/assets/Logoblack.png" alt="Description" className="w-60 h-45" />
+              </div>
+              <div className="flex space-x-0.5">
+                  <a href="/" className="text-gray-700 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium">Home</a>
+                  <a href="/services" className="text-gray-700 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium">Services</a>
+                  <a href="/about" className="text-gray-700 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium">About</a>
+                  <a href="/contact" className="text-blue-400 hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-medium">Contact</a>
+              </div>
+              </div>
+          </div>
+          </nav>
 
       <section className="bg-white dark:bg-gray-900 pt-20">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
