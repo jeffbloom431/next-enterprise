@@ -1,19 +1,11 @@
 "use client";
 import React from "react";
-import { cn } from "lib/utils";
-import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import createGlobe from "cobe";
-
-import reactElementToJSXString from "react-element-to-jsx-string";
-//import { toast, Toaster } from "sonner";
-import { ButtonsCard } from "components/ui/tailwindcss-buttons";
-import { Metadata } from 'next';
 import { Button } from 'components/Button/Button';
 import Link from 'next/link'
 import Image from "next/image";
 import { TypewriterEffectSmooth } from "components/ui/typewriter-effect";
-import { twMerge } from "tailwind-merge";
 
 export default function Web() {
   const words = [

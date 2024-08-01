@@ -1,15 +1,8 @@
 "use client";
 import React from "react";
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalTrigger,
-} from "components/ui/animated-modal";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { Carousel, Card } from "components/ui/apple-cards-carousel";
+
+import { Card, Carousel } from "components/ui/apple-cards-carousel";
 
 export default function Web() {
   const images = [
