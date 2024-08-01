@@ -1,19 +1,21 @@
 "use client";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
+import {
+  IconArrowNarrowLeft,
+  IconArrowNarrowRight,
+  IconX,
+} from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
-import React, {
-    useEffect,
-    useRef,
-    useState,
-    createContext,
-    useContext} from "react";
-  import {
-    IconArrowNarrowLeft,
-    IconArrowNarrowRight,
-    IconX,
-  } from "@tabler/icons-react";
-  import { cn } from "lib/utils";
-  import { useOutsideClick } from "hooks/use-outside-click";
+import { cn } from "lib/utils";
+import { useOutsideClick } from "hooks/use-outside-click";
+
   
   
 
