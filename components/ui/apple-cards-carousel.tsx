@@ -2,11 +2,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import React, {
-    createContext,
-    useContext,
     useEffect,
     useRef,
-    useState} from "react";
+    useState,
+    createContext,
+    useContext} from "react";
   import {
     IconArrowNarrowLeft,
     IconArrowNarrowRight,
