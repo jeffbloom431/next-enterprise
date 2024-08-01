@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "lib/utils";
 import React, {
   createContext,
   ReactNode,
@@ -9,7 +10,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { cn } from "lib/utils";
+
 
 interface ModalContextType {
   open: boolean;
