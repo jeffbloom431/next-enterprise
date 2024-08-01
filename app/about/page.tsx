@@ -1,21 +1,9 @@
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'CalShip Logistics',
-  twitter: {
-    card: 'summary_large_image',
-  },
-  openGraph: {
-    url: 'https://next-enterprise.vercel.app/',
-    images: [
-      {
-        width: 1200,
-        height: 630,
-        url: '/assets/calship-logo.png',
-      },
-    ],
-  },
-};
+"use client";
+import React from "react";
+import { BackgroundGradient } from "components/ui/background-gradient";
+import { IconAppWindow } from "@tabler/icons-react";
+import Image from "next/image";
 
 export default function Web() {
   return (
@@ -36,14 +24,22 @@ export default function Web() {
                 </div>
                 </nav>
 
-      <main className="flex flex-grow flex-col justify-center items-center pt-40">
-      <h2 className="mb-4 text-5xl font-extrabold leading-none tracking-tight dark:text-white text-center">
+      <main className="flex flex-grow flex-col justify-center items-center">
+
+            <div className="max-w-xl">
+      <BackgroundGradient className="rounded-[22px] max-w-xl p-4 sm:p-10 bg-white dark:bg-zinc-900 ">
+              <h2 className="mb-4 text-5xl font-extrabold leading-none tracking-tight dark:text-white text-center">
               About Us
             </h2>
-            <div className=" order-2 mx-10 md:my-0 mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 sm:text-xl md:text-2xl lg:mb-8 lg:text-2xl flex items-center justify-center text-center">
-            CalShip is a leading fulfillment and logistics company dedicated to providing comprehensive supply chain solutions. Founded on the principles of efficiency, reliability, and innovation, we cater to businesses of all sizes with a mission to streamline operations and enhance customer satisfaction. Leveraging state-of-the-art technology and a team of dedicated professionals, we ensure that your products reach their destination on time and in perfect condition.
-              </div>
+ 
+        <p className="text-base font-light sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200 p-4">
+        CalShip is a leading fulfillment and logistics company dedicated to providing comprehensive supply chain solutions. Founded on the principles of efficiency, reliability, and innovation, we cater to businesses of all sizes with a mission to streamline operations and enhance customer satisfaction. Leveraging state-of-the-art technology and a team of dedicated professionals, we ensure that your products reach their destination on time and in perfect condition.
+        </p>
+
+      </BackgroundGradient>
+    </div>
       </main>
+
 
       <footer className="bg-gray-800 dark:bg-gray-900 py-6">
         <div className="mx-auto my-auto max-w-screen-xl px-4 text-center text-gray-300">
