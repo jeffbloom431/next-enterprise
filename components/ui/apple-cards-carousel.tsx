@@ -1,21 +1,20 @@
 "use client";
+import { AnimatePresence, motion } from "framer-motion";
+import Image, { ImageProps } from "next/image";
 import React, {
-    
+    createContext,
     useContext,
     useEffect,
     useRef,
-    useState,
-    createContext,
-  } from "react";
+    useState} from "react";
   import {
     IconArrowNarrowLeft,
     IconArrowNarrowRight,
     IconX,
   } from "@tabler/icons-react";
   import { cn } from "lib/utils";
-  import { AnimatePresence, motion } from "framer-motion";
   import { useOutsideClick } from "hooks/use-outside-click";
-  import Image, { ImageProps } from "next/image";
+  
   
 
 interface CarouselProps {
